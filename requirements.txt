@@ -1,4 +1,4 @@
-django-bootstrap5==5.0
+django-bootstrap5==23.3
 dj-database-url==2.1.0
 Django==5.0
 django-database-url==1.0.3
