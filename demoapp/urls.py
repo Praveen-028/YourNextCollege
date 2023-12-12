@@ -1,6 +1,7 @@
-from django.urls import path
+from django.urls import path,include
 from . import views
 from django.conf import settings
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.conf.urls.static import static
 
 urlpatterns=[
@@ -19,6 +20,8 @@ urlpatterns=[
     path('institutions/',views.institutions,name='institutions.html'),
     path('recommendations/',views.recommendations,name='recommendations.html')
 ]
+
+urlpatterns += staticfiles_urlpatterns()
 
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
