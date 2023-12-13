@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from django.contrib.auth.models import *
 from django.contrib import *
 from django.urls import *
-from bootstrap import *
+
 from .models import *
 from rest_framework.views import APIView
 from rest_framework.response import Response
