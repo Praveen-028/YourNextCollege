@@ -84,6 +84,7 @@ WSGI_APPLICATION = 'demoproject.wsgi.application'
 #         'HOST':'localhost'
 #     }
 # }
+DATABASE_URL="postgres://yournextcollege_user:rsiGn212qZOpE9aiPEVEKAX0IhMfMe6L@dpg-cls8qil5jf6s73ag2aag-a/yournextcollege"
 DATABASES = {
     'default': dj_database_url.config(default=os.environ.get("DATABASE_URL"))
 }
